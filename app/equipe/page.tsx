@@ -6,16 +6,9 @@ import Navbar from '@/components/Navbar'
 const team = [
   {
     name: 'Paul Bain',
-    role: 'Co-fondateur · Design & Développement',
-    bio: 'Paul conçoit et développe chaque site de A à Z. Du premier pixel à la mise en ligne, il s\'assure que le résultat soit soigné, rapide, et pensé pour convertir. Pas de sous-traitance, pas de template : chaque projet est fait sur-mesure.',
-    tags: ['Design', 'Développement', 'Next.js'],
-    photo: null,
-  },
-  {
-    name: 'Romain Debard',
-    role: 'Co-fondateur · Stratégie & Commercial',
-    bio: 'Romain gère la relation client, la stratégie et le développement commercial. Son rôle : s\'assurer que chaque client se sente suivi et compris, du premier contact jusqu\'après la livraison.',
-    tags: ['Stratégie', 'Commercial', 'Administratif'],
+    role: 'Fondateur · Design & Développement',
+    bio: 'Je conçois et développe chaque site de A à Z — du brief initial à la mise en ligne. Pas de sous-traitance, pas de template : vous avez affaire à une seule personne, disponible, réactive, et impliquée dans votre projet du début à la fin.',
+    tags: ['Design', 'Développement', 'Next.js', 'SEO'],
     photo: null,
   },
 ]
@@ -41,12 +34,12 @@ export default function EquipePage() {
             className="font-syne font-black tracking-[-0.035em] leading-[1.0] text-dark"
             style={{ fontSize: 'clamp(28px, 3.8vw, 52px)' }}
           >
-            Deux personnes.<br />Un vrai <em className="not-italic text-orange">engagement.</em>
+            Une seule personne.<br />Un vrai <em className="not-italic text-orange">engagement.</em>
           </h1>
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 gap-6 max-lg:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 max-w-xl">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
