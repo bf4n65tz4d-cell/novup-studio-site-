@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #FFF7ED;
+  --bg-warm:   #F5EDE0;
+  --dark:      #18181B;
+  --dark-dk:   #100D0A;
+  --orange:    #F97316;
+  --orange-dk: #EA580C;
+  --muted:     rgba(24,24,27,0.38);
+  --border:    rgba(24,24,27,0.1);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  body { cursor: auto; }
+}
+
+::selection {
+  background: var(--orange);
+  color: white;
+}
