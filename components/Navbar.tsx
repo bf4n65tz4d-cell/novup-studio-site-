@@ -49,10 +49,10 @@ export default function Navbar() {
       </a>
 
       <div className="flex items-center gap-9">
-        <a href="#services" className={`hidden md:block text-[13px] transition-colors font-inter ${scrolled ? 'text-dark/40 hover:text-dark' : 'text-white/50 hover:text-white'}`}>
+        <a href="/#services" className={`hidden md:block text-[13px] transition-colors font-inter ${scrolled ? 'text-dark/40 hover:text-dark' : 'text-white/50 hover:text-white'}`}>
           Services
         </a>
-        <a href="#process" className={`hidden md:block text-[13px] transition-colors font-inter ${scrolled ? 'text-dark/40 hover:text-dark' : 'text-white/50 hover:text-white'}`}>
+        <a href="/#process" className={`hidden md:block text-[13px] transition-colors font-inter ${scrolled ? 'text-dark/40 hover:text-dark' : 'text-white/50 hover:text-white'}`}>
           Process
         </a>
         <a href="/equipe" className={`hidden md:block text-[13px] transition-colors font-inter ${scrolled ? 'text-dark/40 hover:text-dark' : 'text-white/50 hover:text-white'}`}>

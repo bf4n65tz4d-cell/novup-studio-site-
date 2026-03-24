@@ -20,12 +20,12 @@ const services = [
   {
     num: '01',
     name: 'Création & Refonte',
-    desc: 'Un site à votre image, livré dans les temps. Design soigné, rapide, validé ensemble — sans mauvaise surprise.',
+    desc: 'Un site à votre image, livré dans les temps. Design soigné, rapide, validé ensemble. Pas de mauvaise surprise.',
     details: {
       tagline: 'Votre site, de zéro à en ligne.',
       points: [
         'Design sur-mesure, validé étape par étape avec vous',
-        'Développement Next.js — rapide, moderne, optimisé',
+        'Développement Next.js : rapide, moderne, optimisé',
         'Responsive mobile inclus, testé sur tous les écrans',
         'Nom de domaine, hébergement et mise en ligne gérés',
         'Retours illimités jusqu\'à satisfaction complète',
@@ -40,7 +40,7 @@ const services = [
   {
     num: '02',
     name: 'Entretien & Suivi',
-    desc: 'Textes, photos, bugs, performances — on gère. Vous n\'avez plus à y penser.',
+    desc: 'Textes, photos, bugs, performances : on gère. Vous n\'avez plus à y penser.',
     details: {
       tagline: 'Votre site toujours à jour, sans effort.',
       points: [
@@ -60,7 +60,7 @@ const services = [
   {
     num: '03',
     name: 'Référencement SEO',
-    desc: 'Vos clients vous cherchent. On fait en sorte qu\'ils vous trouvent — sans promesses vides.',
+    desc: 'Vos clients vous cherchent. On fait en sorte qu\'ils vous trouvent. Sans promesses vides.',
     details: {
       tagline: 'Être trouvé sur Google, naturellement.',
       points: [
@@ -115,7 +115,7 @@ export default function Services() {
         {services.map((svc, i) => (
           <motion.div
             key={svc.num}
-            className="group flex items-center gap-0 py-7 border-b border-dark/10 relative overflow-hidden cursor-pointer hover:bg-bg-warm transition-colors duration-250"
+            className="group flex items-center gap-0 py-7 pr-4 border-b border-dark/10 relative overflow-hidden cursor-pointer hover:bg-bg-warm transition-colors duration-250"
             initial={{ opacity: 0, x: -32 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}

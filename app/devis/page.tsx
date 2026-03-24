@@ -233,7 +233,7 @@ export default function DevisPage() {
             Parlons de<br />votre <em className="not-italic text-orange">projet.</em>
           </h1>
           <p className="font-inter text-[15px] leading-[1.7] text-dark/45 max-w-lg">
-            Remplissez ce formulaire en 2 minutes. On vous répond dans la journée avec une proposition claire — sans jargon, sans engagement.
+            Remplissez ce formulaire en 2 minutes. On vous répond dans la journée avec une proposition claire, sans engagement.
           </p>
         </motion.div>
 
@@ -310,7 +310,7 @@ export default function DevisPage() {
                   onChange={setEntretien}
                 />
                 <p className="font-inter text-[12px] text-dark/35 mt-2">
-                  Mises à jour de contenu, corrections, performances — on s&apos;en occupe.
+                  Mises à jour de contenu, corrections, performances : on s&apos;en occupe.
                 </p>
               </div>
 

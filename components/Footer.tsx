@@ -5,7 +5,7 @@ export default function Footer() {
         Nov<span className="text-orange">Up</span> Studio
       </div>
       <div className="font-inter text-[12px] text-dark/35">
-        © 2025 NovUp Studio — Tous droits réservés
+        © 2025 NovUp Studio · Tous droits réservés
       </div>
       <div className="font-inter text-[12px] text-dark/35 flex items-center gap-1">
         Fait avec <span className="text-orange">♥</span> et passion

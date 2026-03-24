@@ -49,25 +49,6 @@ export default function Hero() {
           backgroundSize: '30px 30px',
         }}
       />
-      {/* Quelques dots plus grands et lumineux */}
-      {[
-        { top: '12%', left: '62%', size: 4, opacity: 0.55, delay: 0.8 },
-        { top: '28%', left: '78%', size: 3, opacity: 0.7,  delay: 1.0 },
-        { top: '55%', left: '68%', size: 5, opacity: 0.5,  delay: 1.2 },
-        { top: '70%', left: '85%', size: 3, opacity: 0.65, delay: 0.9 },
-        { top: '40%', left: '91%', size: 4, opacity: 0.45, delay: 1.3 },
-        { top: '18%', left: '55%', size: 3, opacity: 0.6,  delay: 1.1 },
-        { top: '82%', left: '72%', size: 4, opacity: 0.5,  delay: 1.4 },
-      ].map((d, i) => (
-        <motion.div
-          key={i}
-          className="pointer-events-none absolute rounded-full bg-orange"
-          style={{ top: d.top, left: d.left, width: d.size, height: d.size }}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: d.opacity, scale: 1 }}
-          transition={{ duration: 0.6, delay: d.delay, ease: 'easeOut' }}
-        />
-      ))}
 
       {/* ── Animated orange glow blobs ─────────────────────── */}
       <motion.div
@@ -141,13 +122,13 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: 'easeOut', delay: 1.1 }}
       >
         <div>
-          <p className="font-inter text-[15px] leading-[1.7] text-white/45 max-w-[360px] mb-6">
+          <p className="font-inter text-[15px] leading-[1.7] text-white/65 max-w-[360px] mb-6">
             Un seul interlocuteur pour créer, entretenir<br />et faire grandir votre présence en ligne.
           </p>
           <motion.a
             href="/devis"
             className="inline-flex items-center gap-2 font-syne font-bold text-sm px-7 py-3.5 rounded-lg bg-orange text-white tracking-wide"
-            whileHover={{ scale: 1.04, backgroundColor: '#EA580C' }}
+            whileHover={{ scale: 1.07, backgroundColor: '#EA580C', boxShadow: '0 8px 28px rgba(249,115,22,0.45)' }}
             whileTap={{ scale: 0.97 }}
             transition={{ duration: 0.18 }}
           >
@@ -155,13 +136,15 @@ export default function Hero() {
           </motion.a>
         </div>
 
-        <div className="text-right max-md:text-left flex flex-col gap-1.5">
-          <p className="font-syne text-[13px] font-semibold text-white/35">
-            <strong className="text-white font-bold">48h</strong> — réponse garantie
-          </p>
-          <p className="font-syne text-[13px] font-semibold text-white/35">
-            <strong className="text-white font-bold">100%</strong> — clients suivis après livraison
-          </p>
+        <div className="text-right max-md:text-left flex flex-col gap-4">
+          <div>
+            <p className="font-syne font-black text-[28px] leading-none tracking-[-0.03em] text-white">48h</p>
+            <p className="font-inter text-[12px] text-white/50 mt-1">réponse garantie</p>
+          </div>
+          <div>
+            <p className="font-syne font-black text-[28px] leading-none tracking-[-0.03em] text-white">100%</p>
+            <p className="font-inter text-[12px] text-white/50 mt-1">clients suivis après livraison</p>
+          </div>
         </div>
       </motion.div>
 
@@ -174,20 +157,6 @@ export default function Hero() {
         style={{ transformOrigin: 'left' }}
       />
 
-      {/* ── Scroll indicator ───────────────────────────────── */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 max-md:hidden">
-        <motion.div
-          className="w-[1px] bg-white/20"
-          initial={{ height: 0 }}
-          animate={{ height: 48 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 1.6 }}
-        />
-        <motion.div
-          className="w-1.5 h-1.5 rounded-full bg-orange"
-          animate={{ y: [0, 8, 0], opacity: [1, 0.3, 1] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-        />
-      </div>
 
     </section>
   )

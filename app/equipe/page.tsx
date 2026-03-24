@@ -7,8 +7,8 @@ const team = [
   {
     name: 'Paul Bain',
     role: 'Fondateur · Design & Développement',
-    bio: 'Je conçois et développe chaque site de A à Z — du brief initial à la mise en ligne. Pas de sous-traitance, pas de template : vous avez affaire à une seule personne, disponible, réactive, et impliquée dans votre projet du début à la fin.',
-    tags: ['Design', 'Développement', 'Next.js', 'SEO'],
+    bio: 'Je conçois et développe chaque site de A à Z, du brief initial à la mise en ligne. Pas de sous-traitance, pas de template : vous avez affaire à une seule personne, disponible, réactive, et impliquée dans votre projet du début à la fin.',
+    tags: ['Design', 'Développement', 'React / Next.js', 'SEO'],
     photo: null,
   },
 ]
@@ -101,7 +101,7 @@ export default function EquipePage() {
           transition={{ duration: 0.6, delay: 0.45 }}
         >
           <p className="font-inter text-[13px] text-dark/40">
-            On répond à tous les messages dans la journée — c&apos;est nous directement, pas un commercial.
+            Je réponds à tous les messages dans la journée. C&apos;est moi directement, pas un commercial.
           </p>
           <a
             href="/devis"

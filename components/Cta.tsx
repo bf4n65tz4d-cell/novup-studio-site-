@@ -26,7 +26,7 @@ export default function Cta() {
         </h2>
 
         <p className="font-inter text-[15px] text-white/45 leading-[1.7] mb-12">
-          Un message suffit. On vous répond dans la journée —<br className="hidden md:block" />
+          Un message suffit. On vous répond dans la journée,<br className="hidden md:block" />
           sans engagement, sans pression.
         </p>
 
