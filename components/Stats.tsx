@@ -52,7 +52,7 @@ export default function Stats() {
         {stats.map((s, i) => (
           <motion.div
             key={s.label}
-            className={`py-10 px-8 flex flex-col gap-3 max-md:px-0 max-md:py-8 ${
+            className={`py-10 px-8 flex flex-col items-center text-center gap-3 max-md:px-0 max-md:py-8 ${
               i < stats.length - 1 ? 'border-r border-dark/10 max-md:border-r-0 max-md:border-b' : ''
             }`}
             initial={{ opacity: 0, y: 32 }}
@@ -69,7 +69,7 @@ export default function Stats() {
             <div className="font-syne font-bold text-[14px] text-dark tracking-[-0.01em]">
               {s.label}
             </div>
-            <div className="font-inter text-[13px] text-dark/38 leading-relaxed max-w-[220px]">
+            <div className="font-inter text-[13px] text-dark/38 leading-relaxed max-w-[200px]">
               {s.desc}
             </div>
           </motion.div>
