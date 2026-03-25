@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const words = ["L'agence", 'qui', 'ne', 'vous', 'lâche', 'pas.']
 const orangeWords = ['lâche', 'pas.']
 
-const chars = ['Réactifs', '·', 'Disponibles', '·', 'Humains']
+const chars = ['Réactifs', '·', 'Disponibles', '·', 'Engagés']
 
 export default function Statement() {
   return (

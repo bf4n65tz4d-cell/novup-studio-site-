@@ -18,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'NovUp Studio — L\'agence web qui reste là.',
+  title: 'NovUp Studio — Votre site, notre priorité.',
   description: 'Création de sites, entretien et référencement. Simple, efficace, toujours disponibles.',
   keywords: ['agence web', 'création site internet', 'référencement SEO', 'entretien site web'],
 }

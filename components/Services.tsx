@@ -31,8 +31,8 @@ const services = [
         'Retours illimités jusqu\'à satisfaction complète',
       ],
       meta: [
-        { label: 'Délai', value: '2 – 4 semaines' },
-        { label: 'À partir de', value: '800 €' },
+        { label: 'Délai', value: 'Selon le projet, 1 – 4 semaines' },
+        { label: 'Investissement', value: 'Sur devis, dès 250 €' },
         { label: 'Engagement', value: 'Aucun' },
       ],
     },
@@ -52,7 +52,7 @@ const services = [
       ],
       meta: [
         { label: 'Engagement', value: 'Mensuel' },
-        { label: 'À partir de', value: '90 € / mois' },
+        { label: 'À partir de', value: '20 € / mois' },
         { label: 'Réactivité', value: '< 48h' },
       ],
     },
@@ -71,8 +71,8 @@ const services = [
         'Suivi mensuel des positions et rapport transparent',
       ],
       meta: [
-        { label: 'Résultats', value: '3 – 6 mois' },
-        { label: 'À partir de', value: '200 € / mois' },
+        { label: 'Résultats', value: '1 – 3 mois' },
+        { label: 'À partir de', value: '40 € / mois' },
         { label: 'Reporting', value: 'Mensuel' },
       ],
     },
