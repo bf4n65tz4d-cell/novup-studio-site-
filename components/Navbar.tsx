@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 h-[68px] px-16 flex items-center justify-between transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 h-[68px] px-16 max-md:px-5 flex items-center justify-between transition-all duration-300 ${
         scrolled
           ? 'bg-[#FFF7ED]/95 backdrop-blur-md border-b border-dark/10'
           : 'bg-dark-dk/90 backdrop-blur-md border-b border-white/8'
@@ -60,7 +60,7 @@ export default function Navbar() {
         </a>
         <a
           href="/devis"
-          className={`font-syne font-bold text-[13px] px-5 py-2.5 rounded-md transition-colors tracking-wide ${scrolled ? 'bg-dark text-white hover:bg-black' : 'bg-white text-dark hover:bg-white/90'}`}
+          className={`font-syne font-bold text-[13px] px-5 py-2.5 max-md:px-4 max-md:py-2 rounded-md transition-colors tracking-wide whitespace-nowrap ${scrolled ? 'bg-dark text-white hover:bg-black' : 'bg-white text-dark hover:bg-white/90'}`}
         >
           Devis gratuit
         </a>

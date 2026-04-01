@@ -36,7 +36,7 @@ export default function Hero() {
   }, [rotateX, rotateY])
 
   return (
-    <section className="min-h-svh flex flex-col justify-between relative overflow-hidden bg-dark-dk pt-[120px] pb-20 px-16 max-md:px-6 max-md:pt-24 max-md:pb-14">
+    <section className="min-h-svh max-md:min-h-0 flex flex-col justify-between relative overflow-hidden bg-dark-dk pt-[120px] pb-20 px-16 max-md:px-6 max-md:pt-20 max-md:pb-10">
 
       {/* ── Dot grid ────────────────────────────────────────── */}
       <motion.div
@@ -95,7 +95,7 @@ export default function Hero() {
       {/* Wrapper plain div for 3D tilt (avoids Framer Motion overriding CSS transforms) */}
       <div style={{ perspective: 1200 }}>
         <motion.div
-          style={{ rotateY: springY, rotateX: springX, fontSize: 'clamp(48px, 7.8vw, 112px)' }}
+          style={{ rotateY: springY, rotateX: springX, fontSize: 'clamp(34px, 7.8vw, 112px)' }}
           className="font-syne font-black leading-[0.94] tracking-[-0.04em] text-white"
         >
           {lines.map((line, i) => (
@@ -136,7 +136,7 @@ export default function Hero() {
           </motion.a>
         </div>
 
-        <div className="text-right max-md:text-left flex flex-col gap-4">
+        <div className="text-right max-md:hidden flex flex-col gap-4">
           <div>
             <p className="font-syne font-black text-[28px] leading-none tracking-[-0.03em] text-white">48h</p>
             <p className="font-inter text-[12px] text-white/50 mt-1">réponse garantie</p>

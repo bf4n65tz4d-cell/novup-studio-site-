@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="bg-bg border-t border-dark/10 px-16 py-8 flex items-center justify-between max-md:flex-col max-md:gap-3 max-md:text-center max-md:px-6 max-md:py-7">
@@ -5,10 +7,15 @@ export default function Footer() {
         Nov<span className="text-orange">Up</span> Studio
       </div>
       <div className="font-inter text-[12px] text-dark/35">
-        © 2025 NovUp Studio · Tous droits réservés
+        © 2026 NovUp Studio · Tous droits réservés
       </div>
-      <div className="font-inter text-[12px] text-dark/35 flex items-center gap-1">
-        Fait avec <span className="text-orange">♥</span> et passion
+      <div className="font-inter text-[12px] text-dark/35 flex items-center gap-4">
+        <Link href="/mentions-legales" className="hover:text-orange transition-colors duration-150">
+          Mentions légales
+        </Link>
+        <span className="flex items-center gap-1">
+          Fait avec <span className="text-orange">♥</span> et passion
+        </span>
       </div>
     </footer>
   )

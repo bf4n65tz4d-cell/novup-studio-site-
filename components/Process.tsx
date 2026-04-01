@@ -14,7 +14,7 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="px-16 py-24 border-t border-dark/10 bg-bg max-md:px-6 max-md:py-16"
+      className="px-16 py-24 border-t border-dark/10 bg-bg max-md:px-6 max-md:py-12"
     >
       <motion.h2
         className="font-syne font-black tracking-[-0.025em] leading-[1.1] text-dark mb-14"

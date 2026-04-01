@@ -46,7 +46,7 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="px-16 py-24 border-t border-dark/10 bg-bg max-md:px-6 max-md:py-16"
+      className="px-16 py-24 border-t border-dark/10 bg-bg max-md:px-6 max-md:py-10"
     >
       <div className="grid grid-cols-3 gap-0 max-md:grid-cols-1">
         {stats.map((s, i) => (
@@ -62,7 +62,7 @@ export default function Stats() {
           >
             <div
               className="font-syne font-black tracking-[-0.04em] leading-none text-dark"
-              style={{ fontSize: 'clamp(56px, 7vw, 96px)' }}
+              style={{ fontSize: 'clamp(40px, 7vw, 96px)' }}
             >
               <Counter value={s.value} suffix={s.suffix} active={isInView} />
             </div>

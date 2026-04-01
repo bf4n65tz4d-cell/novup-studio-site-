@@ -7,9 +7,9 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 // ─── À CONFIGURER sur emailjs.com ───────────────────────────
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY'
+const EMAILJS_SERVICE_ID  = 'service_fnndbnv'
+const EMAILJS_TEMPLATE_ID = 'template_0tgas1x'
+const EMAILJS_PUBLIC_KEY  = 'fyz-U5WkquE-MUt6E'
 // ────────────────────────────────────────────────────────────
 
 const siteTypes = [
@@ -81,14 +81,14 @@ export default function DevisPage() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          from_name:  form.name,
-          from_email: form.email,
-          phone:      form.phone || 'Non renseigné',
-          services:   servicesLabel,
-          entretien:  entretien === true ? 'Oui' : entretien === false ? 'Non' : 'Non précisé',
-          seo:        seo === true ? 'Oui' : seo === false ? 'Non' : 'Non précisé',
+          prenom:     form.name,
+          nom:        '',
+          email:      form.email,
+          telephone:  form.phone || 'Non renseigné',
+          type_site:  servicesLabel,
           budget:     form.budget || 'Non renseigné',
-          message:    form.message,
+          delai:      'Non précisé',
+          description: form.message,
         },
         EMAILJS_PUBLIC_KEY,
       )
@@ -411,7 +411,7 @@ export default function DevisPage() {
 
               {status === 'error' && (
                 <p className="font-inter text-[13px] text-red-500">
-                  Une erreur s&apos;est produite. Écrivez-nous directement à hello@novupstudio.fr
+                  Une erreur s&apos;est produite. Écrivez-nous directement à paulbain@novupstudio.com
                 </p>
               )}
 

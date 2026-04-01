@@ -9,12 +9,12 @@ const chars = ['Réactifs', '·', 'Disponibles', '·', 'Engagés']
 
 export default function Statement() {
   return (
-    <section className="px-16 py-32 border-t border-dark/10 text-center bg-bg max-md:px-6 max-md:py-20">
+    <section className="px-16 py-32 border-t border-dark/10 text-center bg-bg max-md:px-6 max-md:py-12">
 
       {/* Word-by-word reveal */}
       <motion.p
         className="font-syne font-black tracking-[-0.03em] leading-[1.05] max-w-[1100px] mx-auto mb-12 text-dark flex flex-wrap justify-center gap-x-[0.28em] gap-y-0"
-        style={{ fontSize: 'clamp(38px, 5.5vw, 74px)' }}
+        style={{ fontSize: 'clamp(26px, 5.5vw, 74px)' }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}

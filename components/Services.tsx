@@ -91,7 +91,7 @@ export default function Services() {
   const total = words.length
 
   return (
-    <section id="services" className="px-16 pt-24 pb-20 border-t border-dark/10 bg-bg max-md:px-6">
+    <section id="services" className="px-16 pt-24 pb-20 border-t border-dark/10 bg-bg max-md:px-6 max-md:pt-14 max-md:pb-10">
       <h2
         ref={titleRef}
         className="font-syne font-black tracking-[-0.025em] mb-12 leading-tight"
