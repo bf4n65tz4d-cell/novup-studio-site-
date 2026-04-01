@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -20,15 +19,8 @@ export default function Navbar() {
           : 'bg-dark-dk/90 backdrop-blur-md border-b border-white/8'
       }`}
     >
-      <a href="/" className="flex-shrink-0 flex items-center gap-3">
-        <svg width="36" height="36" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-          <rect width="80" height="80" rx="18" fill="#100D0A"/>
-          <rect x="16" y="16" width="10" height="48" fill="#FFF7ED"/>
-          <polygon points="16,16 26,16 54,62 54,64 44,64 16,18" fill="#FFF7ED"/>
-          <rect x="44" y="16" width="10" height="48" fill="#FFF7ED"/>
-          <polygon points="26,16 36,16 44,30 34,30" fill="#F97316"/>
-        </svg>
-        <span className={`font-syne font-black text-[19px] tracking-tight transition-colors ${scrolled ? 'text-dark' : 'text-white'}`}>
+      <a href="/" className="flex-shrink-0 relative">
+        <span className={`font-syne font-black text-[21px] tracking-tight transition-colors ${scrolled ? 'text-dark' : 'text-white'}`}>
           Nov<span className="text-orange">Up</span> Studio
         </span>
       </a>
