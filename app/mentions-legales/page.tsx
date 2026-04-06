@@ -10,13 +10,13 @@ const sections = [
   {
     title: 'Éditeur du site',
     content: [
-      'Paul Bain — Entrepreneur Individuel (EI)',
+      'Paul Bain ｜ Entrepreneur Individuel (EI)',
       '9 rue Ernest Deconynck, 59800 Lille, France',
       'SIREN : 102 893 435',
       'SIRET : 102 893 435 00010',
       'Code APE : 62.01Z',
       'Immatriculé le 25/03/2026',
-      'TVA non applicable — art. 293 B du CGI',
+      'TVA non applicable ｜ art. 293 B du CGI',
       'Nom commercial : NovUp Studio',
     ],
   },
