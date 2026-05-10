@@ -127,7 +127,6 @@ export default function EquipePage() {
                 className="font-inter text-[11px] font-semibold tracking-[0.12em] uppercase text-orange flex items-center gap-2.5"
                 variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease } } }}
               >
-                <span className="block w-6 h-px bg-orange" />
                 L&apos;équipe
               </motion.p>
 
