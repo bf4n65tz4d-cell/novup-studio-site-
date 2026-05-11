@@ -66,10 +66,10 @@ export default function Stats() {
             >
               <Counter value={s.value} suffix={s.suffix} active={isInView} />
             </div>
-            <div className="font-syne font-bold text-[14px] text-dark tracking-[-0.01em]">
+            <div className="font-syne font-bold text-[17px] text-orange tracking-[-0.01em]">
               {s.label}
             </div>
-            <div className="font-inter text-[13px] text-dark/38 leading-relaxed max-w-[200px]">
+            <div className="font-inter italic text-[13px] text-dark/38 leading-relaxed max-w-[200px]">
               {s.desc}
             </div>
           </motion.div>

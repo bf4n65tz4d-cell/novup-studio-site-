@@ -94,8 +94,8 @@ export default function Services() {
     <section id="services" className="px-16 pt-24 pb-20 border-t border-dark/10 bg-bg max-md:px-6 max-md:pt-14 max-md:pb-10">
       <h2
         ref={titleRef}
-        className="font-syne font-black tracking-[-0.025em] mb-12 leading-tight"
-        style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}
+        className="font-syne font-extrabold tracking-[-0.025em] mb-12 leading-tight"
+        style={{ fontSize: 'clamp(32px, 4vw, 52px)', transform: 'scaleX(0.92)', transformOrigin: 'left' }}
       >
         {(() => {
           let wordIdx = 0

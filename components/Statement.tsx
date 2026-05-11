@@ -9,7 +9,7 @@ const chars = ['Réactifs', '·', 'Disponibles', '·', 'Engagés']
 
 export default function Statement() {
   return (
-    <section className="px-16 py-32 border-t border-dark/10 text-center bg-bg max-md:px-6 max-md:py-12">
+    <section className="px-16 py-16 border-t border-dark/10 text-center bg-bg max-md:px-6 max-md:py-8">
 
       {/* Word-by-word reveal */}
       <motion.p
